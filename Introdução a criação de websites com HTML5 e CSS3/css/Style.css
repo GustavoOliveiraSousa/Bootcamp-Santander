@@ -1,6 +1,8 @@
 body{
     background: #bebebedc;
     font-family: Verdana;
+    max-width: 900px;
+    margin: auto;
 }
 .perfil{
     border-radius: 50%;
@@ -14,7 +16,6 @@ body{
     text-transform: uppercase;
 }
 a {
-    text-decoration: line-through;
     color: rgb(53, 53, 53);
 }
 
@@ -39,7 +40,16 @@ a {
     margin: 0;
     margin-bottom: 15px;
     text-transform: capitalize;
+    text-align: justify;
 }
 .post_image{
     margin-bottom: 15px;
+}
+.content_list{
+    list-style-type:none;
+    padding: 0;
+    margin-left: 15px;
+}
+.post img {
+    max-width: 100%;
 }

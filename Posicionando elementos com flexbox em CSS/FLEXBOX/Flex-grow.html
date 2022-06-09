@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Align content</title>
+    <title>Flex grow</title>
 
     <style>
 /* COMEÇO DA  IMPLEMENTAÇÃO ESTÉTICA PESSOAL */
@@ -13,8 +13,7 @@
             max-width: 400px;
         }
         .separa{
-            display:flex;
-            max-width: 1000px;  
+            max-width: 400px;  
             margin: 0 auto; 
         }
         .minibody{
@@ -23,27 +22,73 @@
         }
         .titulo{
             text-align: center;
-            margin-top: 50px;
+            margin: 10 auto;
         }
 /* FIM DA IMPLEMENTAÇÃO ESTÉTICA PESSOAL */    
 
+        .flex-container{
+            display: flex;
+            border: 2px solid black;
+            max-width: 400px;
 
+        }
+        .item{
+            background-color: orangered;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color: wheat;
+        }
+        .fg-0{
+            flex-grow: 0;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+        .fg-2{
+            flex-grow: 2;
+        }
+        .fg-3{
+            flex-grow: 3;
+        }
 
 </style>
 
 <!-- INICIO DA  IMPLEMENTAÇÃO ESTÉTICA PESSOAL -->
-<h1 class="titulo">ALIGN CONTENT</h1>
+<h1 class="titulo">FLEX GROW</h1>
 <!-- FIM DA  IMPLEMENTAÇÃO ESTÉTICA PESSOAL -->
 
 <div class="separa">
-    <div class="minibody">
-        <h2>Stretch</h2>
-        
+        <h2>Flex grow: 0 0 0 0</h2>
+        <div class="flex-container">
+            <div class="item fg-0">A</div>
+            <div class="item fg-0">B</div>
+            <div class="item fg-0">C</div>
+            <div class="item fg-0">D</div>
+        </div>
 
-    </div>
-    <div class="minibody">
-        <h2>Flex-end</h2>
-        
-    </div>
+        <h2>Flex grow: 0 1 0 0</h2>
+        <div class="flex-container">
+            <div class="item fg-0">A</div>
+            <div class="item fg-1">B</div>
+            <div class="item fg-0">C</div>
+            <div class="item fg-0">D</div>
+        </div>
+
+        <h2>Flex grow: 0 1 2 0</h2>
+        <div class="flex-container">
+            <div class="item fg-0">A</div>
+            <div class="item fg-1">B</div>
+            <div class="item fg-2">C</div>
+            <div class="item fg-0">D</div>
+        </div>
+
+        <h2>Flex grow: 0 1 2 3</h2>
+        <div class="flex-container">
+            <div class="item fg-0">A</div>
+            <div class="item fg-1">B</div>
+            <div class="item fg-2">C</div>
+            <div class="item fg-3">D</div>
+        </div>
 </div>
 </html>

@@ -13,34 +13,7 @@ body{
     justify-content: start;
     width: 60%;
     height: 100vh;
-    max-width: 1300px;
-}
-.toggle{
-    display: none;
-}
-.toggle + label{
-    width: 32px;
-    height: 20px;
-    background-color: lightgray;
-    display: block;
-    position: relative;
-    border-radius: 20px;
-    padding: 2px;
-    transition: 200ms;
-    cursor: pointer;
-}
-.toggle + label:before{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: white;
-    display: block;
-    border-radius: 50%;
-    right: unset;
-    left: 2px;
-    top: 2px;
-    transition: 200ms;
+    max-width: 700px;
 }
 .instagram-phone{
     display: flex;
@@ -149,4 +122,6 @@ body{
     .group{
         border: 1px solid transparent;
     }
+    .download{
+        width: 300px;
 }

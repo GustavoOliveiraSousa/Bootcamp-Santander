@@ -37,7 +37,20 @@
 //      console.log(validation);
 //-------------------------------------------------------
 
-ARRAY
+// ARRAY
+let array = [];
+array.push(3);
+array.push(2);
+array.pop() //exclui o ultimo item do array
+array.push(2);
+array.push(5);
+array.shift(); //exclui o primeiro item do array
+array.unshift(1) //adiciona um item no começo do array
+
+for(let i = 0; i < array.length; i++){
+    console.log(array[i])
+}
+
 
 
 

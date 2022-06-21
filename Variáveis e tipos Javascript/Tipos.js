@@ -16,10 +16,33 @@
 // let exemplo = new String('Beyblade');
 // console.log(exemplo);
 // console.log(typeof exemplo);
-// //-------------------------------------------------------
+//-------------------------------------------------------
 
-//NUMBERS
-let num = 100;
+// NUMBERS
+// let Num1 = 100;
+// let Num2 = 3;
+// console.log(`Operações entre: ${Num1} e ${Num2}\n`)
+// console.log(`Soma: ${Num1+Num2}`);
+// console.log(`Subtração: ${Num1-Num2}`);
+// console.log(`Divisão: ${Num1/Num2}`);
+// console.log(`Multiplicação: ${Num1*Num2}`);
+// console.log(`Elevação: ${Num1**Num2}`);
+// console.log(`Resto: ${Num1%Num2}`);
+//-------------------------------------------------------
 
-console.log(100 +3);
+// BOOLEANS
+// let validation = 3 === 0;
+// console.log(validation);
+//      validation = 3 < 4;
+//      console.log(validation);
+//-------------------------------------------------------
+
+ARRAY
+
+
+
+
+
+
+
 

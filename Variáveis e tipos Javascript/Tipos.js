@@ -63,9 +63,14 @@
 // console.log(person); //imprime os valores das chaves do objeto
 //-------------------------------------------------------
 
-//EMPTY, UNDEFINED E NULL
-
-
+// //EMPTY, UNDEFINED E NULL
+// let limao;
+// console.log(typeof limao); //retornará undefined
+//     limao = "";
+//     console.log(typeof limao);  //retornará string empty
+//         limao = null;
+//         console.log(typeof limao);  //retornará object null propositalmente
+// //-------------------------------------------------------
 
 
 

@@ -61,7 +61,9 @@
 // let mom = "nameOfMom";
 // person[mom] = 'Cleide'
 // console.log(person); //imprime os valores das chaves do objeto
+//-------------------------------------------------------
 
+//EMPTY, UNDEFINED E NULL
 
 
 

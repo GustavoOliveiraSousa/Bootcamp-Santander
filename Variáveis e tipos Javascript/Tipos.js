@@ -1,11 +1,11 @@
-//ESTRUTURA DE DADOS
+// //ESTRUTURA DE DADOS
 // let um = "um";
 // um = 1;
 // console.log(um);
 // console.log(typeof um);
 //-------------------------------------------------------
 
-//STRINGS
+// //STRINGS
 // const DIO = 'Digital Inovation One';
 // let name = 'Gustavo Oliveira, ';
 // let job = 'Programador';
@@ -18,7 +18,7 @@
 // console.log(typeof exemplo);
 //-------------------------------------------------------
 
-// NUMBERS
+// // NUMBERS
 // let Num1 = 100;
 // let Num2 = 3;
 // console.log(`Operações entre: ${Num1} e ${Num2}\n`)
@@ -30,28 +30,37 @@
 // console.log(`Resto: ${Num1%Num2}`);
 //-------------------------------------------------------
 
-// BOOLEANS
+// // BOOLEANS
 // let validation = 3 === 0;
 // console.log(validation);
 //      validation = 3 < 4;
 //      console.log(validation);
 //-------------------------------------------------------
 
-// ARRAY
-let array = [];
-array.push(3);
-array.push(2);
-array.pop() //exclui o ultimo item do array
-array.push(2);
-array.push(5);
-array.shift(); //exclui o primeiro item do array
-array.unshift(1) //adiciona um item no começo do array
+// // ARRAY
+// let array = [];
+// array.push(3);
+// array.push(2);
+// array.pop() //exclui o ultimo item do array
+// array.push(2);
+// array.push(5);
+// array.shift(); //exclui o primeiro item do array
+// array.unshift(1) //adiciona um item no começo do array
+// for(let i = 0; i < array.length; i++){
+//     console.log(array[i])
+// }
+//-------------------------------------------------------
 
-for(let i = 0; i < array.length; i++){
-    console.log(array[i])
-}
-
-
+// //OBJETOS
+// let person = {
+//     name: 'Gustavo',
+//     age: 20,
+//     adress: 'Rua dos Bobos, número 0'
+// };
+// person["numberOfSimblings"] = 2;
+// let mom = "nameOfMom";
+// person[mom] = 'Cleide'
+// console.log(person); //imprime os valores das chaves do objeto
 
 
 

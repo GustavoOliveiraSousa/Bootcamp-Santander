@@ -17,7 +17,10 @@ function criaPrimeiraFrase(num1, num2) {
 }
 
 function criaSegundaFrase(num1, num2) {
-	const soma = num1 + num2;
+	
+	n1 = parseInt(num1);
+	n2 = parseInt(num2);
+	const soma = (num1 + num2);
 	let comparaDez = 'menor';
 	let comparaVinte = 'menor';
 
@@ -32,6 +35,12 @@ function criaSegundaFrase(num1, num2) {
 	return `Sua soma é ${soma}, que é ${comparaDez} do que 10 e ${comparaVinte} do que 20.`;
 }
 
-console.log(comparaNumeros(input1, input2));
-var input1 = prompt('Digite o primeiro número: ');
-var input2 = prompt('Digite o segundo número: ');
+function inicalizador() {
+	var num1 = prompt('Digite o primeiro número: ');
+	num1 = parseInt(num1);
+	var num2 = prompt('Digite o segundo número: ');
+	num2 = parseInt(num2);
+	alert(comparaNumeros(num1, num2));
+}
+
+document.getElementById('button').addEventListener('click', inicalizador );

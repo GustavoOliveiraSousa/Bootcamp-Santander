@@ -1,9 +1,10 @@
 body{
     background-color: rgb(236, 236, 236);
     background-image: url("https://static.vecteezy.com/system/resources/previews/001/409/192/original/abstract-geometric-banner-free-vector.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position:  top;
-    background-size: 4000px; 
+    background-size: 2500px; 
+    bac
 }
 
 .container{

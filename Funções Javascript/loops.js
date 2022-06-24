@@ -117,8 +117,27 @@
 // console.log(pessoa.getId());
 // //----------------------------------
 
-//THIS - CALL
-//o this é substituido pelo atributo de call
+// //THIS - CALL
+// //o this é substituido pelo argumento de call
+
+// const pessoa = {
+//     nome: "Gustavo",
+// };
+
+// const corFavorita = {
+//     nome: "Laranja",
+// };
+
+// function getSomthing() {
+//     console.log(this.nome);
+// }
+
+// getSomthing.call(pessoa);
+// getSomthing.call(corFavorita); 
+// //---------------------------------------
+
+//THIS - APPLY
+//o this é substituido pelo argumento de call
 
 const pessoa = {
     nome: "Gustavo",
@@ -132,4 +151,6 @@ function getSomthing() {
     console.log(this.nome);
 }
 
-getSomthing.call(pessoa); 
+getSomthing.apply(pessoa);
+getSomthing.apply(corFavorita); 
+//---------------------------------------

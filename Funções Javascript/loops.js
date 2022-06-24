@@ -14,20 +14,88 @@
 // console.log(numero);
 // //-------------------------------
 
-//IF/ELSE
-function numeroPositivo(num) {
-    const ehNegativo = num < 0;
-    const maiorQueDez = num >10;
+// //IF/ELSE
+// function numeroPositivo(num) {
+//     const ehNegativo = num < 0;
+//     const maiorQueDez = num >10;
 
-    if (ehNegativo) {
-        return "Esse número é negativo!";
-    }else if (!ehNegativo && maiorQueDez) {
-        return "Esse número é positivo e maior que dez!"
-    }
+//     if (ehNegativo) {
+//         return "Esse número é negativo!";
+//     }else if (!ehNegativo && maiorQueDez) {
+//         return "Esse número é positivo e maior que dez!"
+//     }
 
-    return "Esse número é positivo!";
+//     return "Esse número é positivo!";
+// }
+
+// numero = numeroPositivo(50);
+// console.log(numero);
+// //-------------------------------
+
+// //SWITCH/CASE
+// function getAnimal(id) {
+//     switch (id) {
+//         case 1:
+//             return "ornintorrinco";
+//         case 2:
+//             return "pinguin";
+//         case 3:
+//             return "periquito";
+//         case 4:
+//             return "tubarão";
+//         default:
+//             return "opção inválida!";
+//     }
+// }
+
+// animal = getAnimal(3);
+// console.log(animal);
+
+// //----------------------------------
+
+// //FOR
+// function multiplicaPorDois(array) {
+//     let multiplicados = [];
+
+//     for (let index = 0; index < array.length; index++) {
+//         multiplicados.push(array[index] *2);
+//     }
+
+//     return multiplicados
+// }
+
+// const meusNumeros = [2,33,456,356,40];
+
+// let output = multiplicaPorDois(meusNumeros);
+// console.log(output);
+// //----------------------------------------
+
+// //WHILE
+// //executa instruções até que a condição se torne falsa
+// function exemploWhile() {
+//     let num = 0
+
+//     while (num <= 5) {
+//         console.log(num);
+//         num++;
+//     }
+// }
+
+// let output = exemploWhile()
+// console.log(output);
+// --------------------------------------
+
+//DO WHILE
+//executa instruções até que a condição se torne falsa, porém a primeira execução sempre ocorre
+function exemploWhile() {
+    let num = 0
+
+    do{
+        console.log(num);
+        num++;
+    }while (num <= 5) 
 }
 
-numero = numeroPositivo(50);
-console.log(numero);
-//-------------------------------
+let output = exemploWhile()
+console.log(output);
+//--------------------------------------

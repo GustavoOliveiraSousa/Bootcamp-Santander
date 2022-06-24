@@ -136,21 +136,32 @@
 // getSomthing.call(corFavorita); 
 // //---------------------------------------
 
+// //THIS - APPLY
+// //o this é substituido pelo argumento de apply
+
+// const pessoa = {
+//     nome: "Gustavo",
+// };
+
+// const corFavorita = {
+//     nome: "Laranja",
+// };
+
+// function getSomthing() {
+//     console.log(this.nome);
+// }
+
+// getSomthing.apply(pessoa);
+// getSomthing.apply(corFavorita); 
+// //---------------------------------------
+
 //THIS - APPLY
-//o this é substituido pelo argumento de apply
+//clona a estrutura da função onde é chamada e aplica o valor do objeto como parametro
 
-const pessoa = {
-    nome: "Gustavo",
+const retornaNomes = function (){
+    return this.nome;
 };
 
-const corFavorita = {
-    nome: "Laranja",
-};
+let Gustavo = retornaNomes.blind({nome: "Gustavo"});
 
-function getSomthing() {
-    console.log(this.nome);
-}
-
-getSomthing.apply(pessoa);
-getSomthing.apply(corFavorita); 
-//---------------------------------------
+Gustavo();

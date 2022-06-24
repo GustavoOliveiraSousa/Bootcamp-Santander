@@ -165,3 +165,4 @@ const retornaNomes = function (){
 let Gustavo = retornaNomes.bind({nome: "Gustavo"});
 
 console.log(Gustavo()); 
+//---------------------------------------

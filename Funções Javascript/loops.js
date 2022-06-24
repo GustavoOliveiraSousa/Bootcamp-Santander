@@ -132,4 +132,4 @@ function getSomthing() {
     console.log(this.nome);
 }
 
-console.log(getSomthing.call(pessoa)); 
+getSomthing.call(pessoa); 

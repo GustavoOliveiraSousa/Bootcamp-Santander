@@ -155,14 +155,14 @@
 // getSomthing.apply(corFavorita); 
 // //---------------------------------------
 
-//THIS - APPLY
-//clona a estrutura da função onde é chamada e aplica o valor do objeto como parametro
+// //THIS - APPLY
+// //clona a estrutura da função onde é chamada e aplica o valor do objeto como parametro
 
-const retornaNomes = function (){
-    return this.nome;
-};
+// const retornaNomes = function (){
+//     return this.nome;
+// };
 
-let Gustavo = retornaNomes.bind({nome: "Gustavo"});
+// let Gustavo = retornaNomes.bind({nome: "Gustavo"});
 
-console.log(Gustavo()); 
-//---------------------------------------
+// console.log(Gustavo()); 
+// //---------------------------------------

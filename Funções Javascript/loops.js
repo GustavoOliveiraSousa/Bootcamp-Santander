@@ -85,17 +85,32 @@
 // console.log(output);
 // --------------------------------------
 
-//DO WHILE
-//executa instruções até que a condição se torne falsa, porém a primeira execução sempre ocorre
-function exemploWhile() {
-    let num = 0
+// //DO WHILE
+// //executa instruções até que a condição se torne falsa, porém a primeira execução sempre ocorre
+// function exemploWhile() {
+//     let num = 0
 
-    do{
-        console.log(num);
-        num++;
-    }while (num <= 5) 
-}
+//     do{
+//         console.log(num);
+//         num++;
+//     }while (num <= 5) 
+// }
 
-let output = exemploWhile()
-console.log(output);
-//--------------------------------------
+// let output = exemploWhile()
+// console.log(output);
+// //--------------------------------------
+
+//THIS
+const pessoa = {
+    firstName: "Gustavo",
+    lastName: "Sousa",
+    id: 1,
+    fullName: function(){
+        return this.firstName+" "+this.lastName
+    },
+    getId: function () {
+        return this.id;
+    }
+};
+
+console.log(pessoa.fullName());

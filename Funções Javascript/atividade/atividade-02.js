@@ -1,11 +1,11 @@
-const pessoa =  [
-    pessoa.nome = "Gustavo",
-    pessoa.idade = 19,
-]
+const pessoa =  {
+    nome: "Gustavo",
+    idade: 19,
+};
 
-
-function calculaIdade(anos) {
-	return `Daqui a ${anos} anos, ${this.nome} terá ${
-		this.idade + anos
-	} anos de idade.`;
+function calculaIdade(idade) {
+	return `Daqui a ${anos} anos, ${this.nome} terá ${this.idade + anos} anos de idade.`;
 }
+
+var anos = 27;
+console.log (calculaIdade.call(pessoa));

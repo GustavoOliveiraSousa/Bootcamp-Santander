@@ -155,7 +155,7 @@
 // getSomthing.apply(corFavorita); 
 // //---------------------------------------
 
-// //THIS - APPLY
+// //THIS - BIND
 // //clona a estrutura da função onde é chamada e aplica o valor do objeto como parametro
 
 // const retornaNomes = function (){

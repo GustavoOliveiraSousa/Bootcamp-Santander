@@ -137,7 +137,7 @@
 // //---------------------------------------
 
 //THIS - APPLY
-//o this é substituido pelo argumento de call
+//o this é substituido pelo argumento de apply
 
 const pessoa = {
     nome: "Gustavo",

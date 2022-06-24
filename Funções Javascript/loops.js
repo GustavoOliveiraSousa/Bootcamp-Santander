@@ -100,17 +100,36 @@
 // console.log(output);
 // //--------------------------------------
 
-//THIS
+// //THIS
+// const pessoa = {
+//     firstName: "Gustavo",
+//     lastName: "Sousa",
+//     id: 1,
+//     fullName: function(){
+//         return this.firstName+" "+this.lastName
+//     },
+//     getId: function () {
+//         return this.id;
+//     }
+// };
+
+// console.log(pessoa.fullName());
+// console.log(pessoa.getId());
+// //----------------------------------
+
+//THIS - CALL
+//o this é substituido pelo atributo de call
+
 const pessoa = {
-    firstName: "Gustavo",
-    lastName: "Sousa",
-    id: 1,
-    fullName: function(){
-        return this.firstName+" "+this.lastName
-    },
-    getId: function () {
-        return this.id;
-    }
+    nome: "Gustavo",
 };
 
-console.log(pessoa.fullName());
+const corFavorita = {
+    nome: "Laranja",
+};
+
+function getSomthing() {
+    console.log(this.nome);
+}
+
+console.log(getSomthing.call(pessoa)); 

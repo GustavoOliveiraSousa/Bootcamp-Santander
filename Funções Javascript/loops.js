@@ -162,6 +162,6 @@ const retornaNomes = function (){
     return this.nome;
 };
 
-let Gustavo = retornaNomes.blind({nome: "Gustavo"});
+let Gustavo = retornaNomes.bind({nome: "Gustavo"});
 
-Gustavo();
+console.log(Gustavo()); 

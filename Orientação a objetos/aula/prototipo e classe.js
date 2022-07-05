@@ -10,6 +10,6 @@ class Meal {
         this.food = food
     }
     eat() {
-        return "(●'◡'●)"
+        return "(●'◡'●)";
     }
 }

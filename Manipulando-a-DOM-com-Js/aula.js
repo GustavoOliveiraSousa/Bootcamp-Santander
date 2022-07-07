@@ -38,5 +38,12 @@ document.getElementById("paragrafo").style.color = "red";
 //Event listener
 //diretamente no javascipt, cria um evento que vai ser acionado no momento em que o usuário realizar determinada ação
 
-// const botao = document.getElementById("meuBotao");
-// botao.addEventListener("click", outra função)
+var node = document.getElementById('button');
+
+function mudaTexto(paragrafo) {
+    paragrafo.innerHTML = "ESSE É O MEU JEITO NINJA DE SER";
+
+    document.getElementById('foto').src = 'https://imageproxy.ifunny.co/crop:x-20,resize:640x,quality:90x75/images/b6e14db2ac28c22801d8d008aea52f4e87bb2c6f3dc5fbbeb86fbc24bdc5ab72_1.jpg';
+
+    document.getElementById('button').remove('_button')
+}

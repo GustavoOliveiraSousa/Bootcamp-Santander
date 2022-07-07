@@ -1,0 +1,33 @@
+body {
+    background-color: gray;
+    font-family: Verdana;
+    max-width: 900px;
+    margin:  auto;
+}
+
+.container {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.paragrafo {
+    text-align: center;
+}
+.button button{
+    font-size: 25px;
+    font-weight: 800;
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.foto {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+._foto {
+    border-radius: 5%;
+    width: 100%;
+}

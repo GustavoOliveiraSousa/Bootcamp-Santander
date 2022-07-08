@@ -3,10 +3,13 @@
 // let soma = (a: number, b:number) => a + b;
 // console.log(soma(2,6));
 //==========================================================
-function redirecione(Usuario) {
-    if (Usuario.cargo) {
-        //redirecionar (usuario.cargo);
+var MeuCachorro = /** @class */ (function () {
+    function MeuCachorro(nome, idade) {
+        this.idade = idade;
+        this.nome = nome;
     }
-    //redirecionar para a area do usuário
-}
-//====================================================================
+    return MeuCachorro;
+}());
+var cao = new MeuCachorro("Apolo", 5);
+console.log(cao.nome);
+//=================================================================

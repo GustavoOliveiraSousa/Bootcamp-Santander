@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/GustavoOliveiraSousa/Bootcamp-Santander#readme",
   "dependencies": {
+    "@types/jquery": "^3.5.14",
     "jquery": "^3.6.0"
   }
 }

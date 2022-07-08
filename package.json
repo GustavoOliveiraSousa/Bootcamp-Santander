@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/GustavoOliveiraSousa/Bootcamp-Santander/issues"
   },
-  "homepage": "https://github.com/GustavoOliveiraSousa/Bootcamp-Santander#readme"
+  "homepage": "https://github.com/GustavoOliveiraSousa/Bootcamp-Santander#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
 }

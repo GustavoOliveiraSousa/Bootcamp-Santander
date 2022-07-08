@@ -113,26 +113,30 @@
 // }
 // //====================================================================
 
-//CRIANDO VARIAVEIS COM PROPRIEDADE READONLY E PRIVATE
-interface Cachorro {
-    nome: string,
-    idade: number,
-    parqueFavorito?: string
-}
+// //CRIANDO VARIAVEIS COM PROPRIEDADE READONLY E PRIVATE
+// interface Cachorro {
+//     nome: string,
+//     idade: number,
+//     parqueFavorito?: string
+// }
 
-type CachorroSomenteLeitura = {
-    +readonly [K in keyof Cachorro]: Cachorro[K];
-}
+// type CachorroSomenteLeitura = {
+//     +readonly [K in keyof Cachorro]: Cachorro[K];
+// }
 
-class MeuCachorro implements CachorroSomenteLeitura {
-    nome;
-    idade;
+// class MeuCachorro implements CachorroSomenteLeitura {
+//     nome;
+//     idade;
 
-    constructor (nome: string, idade: number) {
-        this.idade = idade;
-        this.nome = nome;
-    }
-}
-const cao = new MeuCachorro("Apolo", 5)
-console.log(cao.nome);
-//=================================================================
+//     constructor (nome: string, idade: number) {
+//         this.idade = idade;
+//         this.nome = nome;
+//     }
+// }
+// const cao = new MeuCachorro("Apolo", 5)
+// console.log(cao.nome);
+// //=================================================================
+
+//COMO IMPORTAR BIBLIOTECAS COM TYPESCRIPT
+import $ from 'jquery'
+//====================================================================

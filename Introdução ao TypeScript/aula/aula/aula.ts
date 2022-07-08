@@ -1,3 +1,21 @@
+//INSTALAR JQUERY - clique com o botão direito em cima do seu arquivo.ts e abra um novo terminal integrado
+//execute = npm install jquery
+//CARREGAR O JQUERY - no mesmo terminal execute = npm install --save @types/jquery
+//feche e abra o VSCode
+//fim
+
+//INSTALAR TYPESCRIPT - clique com o botão direito em cima do seu arquivo.ts e abra um novo terminal integrado
+//execute = npm init
+//execute = npm install typescript
+//execute = npx tsc --init
+//Para fins do exemplo, vamos alterar o parâmetro "modules": "commonjs" para "modules": "ESNext", aqui estamos avisando ao TypeScript para usar o padrão do EcmaScript mais atual. Também vamos deixar ativado o parâmetro "outDir": "./dist", que será o diretório onde o TypeScript irá gerar o código JavaScript, lembrando que o TypeScript, no final das contas, gera um código JavaScript.
+//escreva seu código no seu arquivo.ts e execute "npx tsc", prontinho, na pasta dir irá aparecer seu arquivo transcrito para Javascript
+//============================================================================
+
+
+
+
+
 //ESCREVENDO A FUÇÃO SOMA EM TYPESCRIPT
 // let soma = (a: number, b:number) => a + b;
 // console.log(soma(2,6));
@@ -138,14 +156,15 @@
 // //=================================================================
 
 //COMO IMPORTAR BIBLIOTECAS COM TYPESCRIPT
+
 import $ from 'jquery';
 
 $.fn.extend({
     novaFuncao() {
-        console.log("Chamou nova função");
+        console.log('Chamou nova função');
     }
 });
 
-$('input').
+$('body').nov
 
 //====================================================================

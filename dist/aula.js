@@ -4,9 +4,9 @@
 // console.log(soma(2,6));
 //==========================================================
 function redirecione(Usuario) {
-    if ('cargo' in Usuario) {
-        //redirecionar para a area de administração
+    if (Usuario.cargo) {
+        //redirecionar (usuario.cargo);
     }
-    //redirecionar para a area de usuario
+    //redirecionar para a area do usuário
 }
-//==================================================================Z
+//====================================================================

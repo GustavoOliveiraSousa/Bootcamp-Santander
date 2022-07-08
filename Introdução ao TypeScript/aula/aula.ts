@@ -80,19 +80,35 @@
 
 // //==================================================================
 
-//DESENVOLVENDO CONDICIONAIS A PARTIR DE UM PARÂMETRO
-interface IUsuario {
-    id: string,
-    email: string,
-}
-interface IAdmin extends IUsuario{
-    cargo: "gerente" | "coordenador" | "supervisor";
-}
+// //DESENVOLVENDO CONDICIONAIS A PARTIR DE UM PARÂMETRO
+// interface IUsuario {
+//     id: string,
+//     email: string,
+// }
+// interface IAdmin extends IUsuario{
+//     cargo: "gerente" | "coordenador" | "supervisor";
+// }
 
-function redirecione(Usuario: IUsuario | IAdmin) {
-    if ('cargo' in Usuario) {
-        //redirecionar para a area de administração
-    }
-    //redirecionar para a area de usuario
-}
-//==================================================================Z
+// function redirecione(Usuario: IUsuario | IAdmin) {
+//     if ('cargo' in Usuario) {
+//         //redirecionar para a area de administração
+//     }
+//     //redirecionar para a area de usuario
+// }
+// //==================================================================
+
+// //UTILIZANDO O CARACTER "?" PARA VARIÁVEIS OPCIONAIS
+
+// interface IUsuario {
+//     id: string,
+//     email: string,
+//     cargo?: "gerente" | "coordenador" | "supervisor" | "funcionario";
+// }
+
+// function redirecione(Usuario: IUsuario) {
+//     if (Usuario.cargo) {
+//         //redirecionar (usuario.cargo);
+//     }
+//     //redirecionar para a area do usuário
+// }
+// //====================================================================

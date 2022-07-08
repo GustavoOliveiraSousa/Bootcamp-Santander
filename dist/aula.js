@@ -47,10 +47,23 @@
 //     visaoNoturna: true,
 // };
 // //================================================================
-//TRATANDO A TAG INPUT
-var input = document.getElementById("input");
-input.addEventListener('input', function (event) {
-    console.log('digitei');
-    // console.log(event.currentTarget);
-});
+
+// //TRATANDO A TAG INPUT
+// var input = document.getElementById('input');
+// input.addEventListener('input', function (event) {
+//     ////console.log('digitei');
+//     // const i = event.currentTarget as HTMLInputElement;
+//     // console.log(i, value );
+// });
 //====================================================================
+
+// //GENERIC TYPES
+// function adicionaApendiceALista<T>(array: any[], valor: T) {
+//     return array.map(item => item + valor);
+// }
+// const operacaoComNumeros = adicionaApendiceALista([1, 2, 3], 1);
+// const operacaoSemNumeros = adicionaApendiceALista(['A', 'B', 'C'], 'd');
+// console.log(operacaoComNumeros);
+// console.log(operacaoSemNumeros);
+// //==================================================================
+

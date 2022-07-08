@@ -80,4 +80,19 @@
 
 // //==================================================================
 
-//DESENVOLVENDO CONDICIONAIS
+//DESENVOLVENDO CONDICIONAIS A PARTIR DE UM PARÂMETRO
+interface IUsuario {
+    id: string,
+    email: string,
+}
+interface IAdmin extends IUsuario{
+    cargo: "gerente" | "coordenador" | "supervisor";
+}
+
+function redirecione(Usuario: IUsuario | IAdmin) {
+    if ('cargo' in Usuario) {
+        //redirecionar para a area de administração
+    }
+    //redirecionar para a area de usuario
+}
+//==================================================================Z

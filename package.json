@@ -4,6 +4,7 @@
   "description": "Repositório para armazenar códigos de Atividades e Projetos",
   "main": "index.js",
   "scripts": {
+    "start": "parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

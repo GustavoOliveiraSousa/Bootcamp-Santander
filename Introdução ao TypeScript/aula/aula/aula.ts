@@ -157,14 +157,28 @@
 
 //COMO IMPORTAR BIBLIOTECAS COM TYPESCRIPT
 
-import $ from 'jquery';
+// const numero = 18;
+// console.log(numero);
 
-$.fn.extend({
-    novaFuncao() {
-        console.log('Chamou nova função');
-    }
-});
 
-$('body').nov
+//====================================================================
+
+//EXEMPLO DE COMO USAR O OMIT
+//Omit vem de omitir algo
+
+interface Pessoa {
+    nome: string,
+    idade: number,
+    nacionalidade: string
+}
+interface Brasileiro extends Omit<Pessoa, 'nacionalidade'> {
+}
+
+const Gustavo: Brasileiro = {
+    nome: "Gustavo Oliveira de Sousa",
+    idade: 19,
+}
+
+console.log(Gustavo);
 
 //====================================================================

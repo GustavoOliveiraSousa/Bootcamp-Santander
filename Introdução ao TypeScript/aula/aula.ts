@@ -112,3 +112,27 @@
 //     //redirecionar para a area do usuário
 // }
 // //====================================================================
+
+//CRIANDO VARIAVEIS COM PROPRIEDADE READONLY E PRIVATE
+interface Cachorro {
+    nome: string,
+    idade: number,
+    parqueFavorito?: string
+}
+
+type CachorroSomenteLeitura = {
+    +readonly [K in keyof Cachorro]: Cachorro[K];
+}
+
+class MeuCachorro implements CachorroSomenteLeitura {
+    nome;
+    idade;
+
+    constructor (nome: string, idade: number) {
+        this.idade = idade;
+        this.nome = nome;
+    }
+}
+const cao = new MeuCachorro("Apolo", 5)
+console.log(cao.nome);
+//=================================================================

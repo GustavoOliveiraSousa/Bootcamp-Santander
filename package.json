@@ -1,10 +1,13 @@
 {
   "name": "bootcamp-santander",
   "version": "1.0.0",
-  "description": "Repositório para armazenar códigos de Atividades e Projetos",
+  "description": "",
   "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "typescript": "^4.7.4"
+  },
   "scripts": {
-    "start": "parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,11 +19,5 @@
   "bugs": {
     "url": "https://github.com/GustavoOliveiraSousa/Bootcamp-Santander/issues"
   },
-  "homepage": "https://github.com/GustavoOliveiraSousa/Bootcamp-Santander#readme",
-  "dependencies": {
-    "@types/jquery": "^3.5.14",
-    "jquery": "^3.6.0"
-  },
-  "devDependencies": {},
-  "keywords": []
+  "homepage": "https://github.com/GustavoOliveiraSousa/Bootcamp-Santander#readme"
 }

@@ -138,13 +138,15 @@
 // //=================================================================
 
 //COMO IMPORTAR BIBLIOTECAS COM TYPESCRIPT
-import $ from 'jquery';
+// import $ from 'jquery';
 
-$.fn.extend({
-    novaFuncao() {
-        console.log("Chamou nova função");
-    }
-});
+// $.fn.extend({
+//     novaFuncao() {
+//         console.log("Chamou nova função");
+//     }
+// });
 
-$('input').nov
+// $('input').nova
+console.log('deu certo?');
+
 //====================================================================

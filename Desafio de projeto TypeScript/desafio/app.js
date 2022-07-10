@@ -1,25 +1,45 @@
 "use strict";
-// npm install tsc-watch --save-dev
-// não ative a configuração outdir no package.json (senão o tsc watch não funciona)
-// npm run "algum script do package.json(voce pode criar) eu configurei o "watch": "tsc --watch" e o "start": "lite-server",
-//tsc --init    - para iniciar o tradutor(cria o arquivo tsconfig.json)
-let button = document.getElementById("button");
-let input1 = document.getElementById("input1");
-let input2 = document.getElementById("input2");
-const output = document.getElementById("output");
-function adicionaNumeros(num1, num2) {
-    if (typeof num1 === "number" && typeof num2 === "number") {
-        return num1 + num2;
+const pessoa = {
+    nome: 'João Arthur',
+    idade: 20,
+    profissao: 'Desenvolvedora de Sistemas',
+};
+const Gustavo = {
+    nome: "Gustavo",
+    idade: 19,
+    profissao: "Desenvolvedora de Sistemas"
+};
+var profissao;
+(function (profissao) {
+    profissao[profissao["Desenvolvedor(a)"] = 0] = "Desenvolvedor(a)";
+    profissao[profissao["Professor(a)"] = 1] = "Professor(a)";
+    profissao[profissao["Arquiteto(a)"] = 2] = "Arquiteto(a)";
+    profissao[profissao["Enfermeiro(a)"] = 3] = "Enfermeiro(a)";
+    profissao[profissao["Engenheiro(a)"] = 4] = "Engenheiro(a)";
+})(profissao || (profissao = {}));
+const Morfeu = {
+    nome: "Morfeu",
+    idade: 23,
+    profissao: profissao["Desenvolvedor(a)"]
+};
+const Margarida = {
+    nome: "Margarida",
+    idade: 16,
+    profissao: profissao["Engenheiro(a)"]
+};
+const Yudi = {
+    nome: "Yudi",
+    idade: 34,
+    profissao: profissao["Engenheiro(a)"],
+    materias: ['Mecânica dos Fluidos', 'Resistencia dos Materiais', 'Cálculo']
+};
+const Morzart = {
+    nome: "Morzart",
+    idade: 13,
+};
+function listar(lista) {
+    for (const item of lista) {
+        console.log("- ", item);
     }
 }
-if (button) {
-    button.addEventListener('click', () => {
-        if (input1 && input2) {
-            let saida = adicionaNumeros(Number(input1.value), Number(input2.value));
-            if (saida) {
-                let saidaString = saida.toString();
-                output.innerHTML = saidaString;
-            }
-        }
-    });
-}
+listar(Yudi.materias);

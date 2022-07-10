@@ -1,27 +1,61 @@
-// npm install tsc-watch --save-dev
-// não ative a configuração outdir no package.json (senão o tsc watch não funciona)
-// npm run "algum script do package.json(voce pode criar) eu configurei o "watch": "tsc --watch" e o "start": "lite-server",
-//tsc --init    - para iniciar o tradutor(cria o arquivo tsconfig.json)
-let button = document.getElementById("button");
-let input1 = document.getElementById("input1") as HTMLInputElement;
-let input2 = document.getElementById("input2") as HTMLInputElement;
-const output: HTMLElement = document.getElementById("output") as HTMLElement;
+const pessoa = {
+    nome: 'João Arthur',
+    idade: 20,
+    profissao: 'Desenvolvedora de Sistemas',
+}
 
-function adicionaNumeros(num1: number, num2: number) {
-    if (typeof num1 === "number" && typeof num2 === "number"){
-        return num1 + num2
+const Gustavo: {nome: string, idade: number, profissao: string} = {
+    nome: "Gustavo",
+    idade: 19,
+    profissao: "Desenvolvedora de Sistemas"
+}
+
+enum profissao {
+    "Desenvolvedor(a)",
+    "Professor(a)",
+    "Arquiteto(a)",
+    "Enfermeiro(a)",
+    "Engenheiro(a)",
+}
+
+interface pessoa {
+    nome: string,
+    idade: number,
+    profissao?: profissao
+}
+interface Estudade extends pessoa{
+    materias: string[]
+}
+
+const Morfeu: pessoa = {
+    nome: "Morfeu",
+    idade: 23,
+    profissao: profissao["Desenvolvedor(a)"]
+}
+
+const Margarida: pessoa = {
+    nome: "Margarida",
+    idade: 16,
+    profissao: profissao["Engenheiro(a)"]
+}
+
+const Yudi: Estudade = {
+    nome: "Yudi",
+    idade: 34,
+    profissao: profissao["Engenheiro(a)"],
+    materias: ['Mecânica dos Fluidos', 'Resistencia dos Materiais', 'Cálculo']
+}
+
+const Morzart: pessoa = {
+    nome: "Morzart",
+    idade: 13,
+}
+
+function listar(lista: string[]) {
+    for (const item of lista ) {
+        console.log("- ", item);
+        
     }
 }
 
-if (button){
-    button.addEventListener('click', () =>{
-        if(input1 && input2){
-           let saida =  adicionaNumeros(Number(input1.value), Number(input2.value),
-           )
-        if (saida){
-            let saidaString = saida.toString();
-            output.innerHTML = saidaString;
-            }
-        }
-    })
-}
+listar(Yudi.materias);

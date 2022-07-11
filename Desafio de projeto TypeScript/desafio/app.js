@@ -1,13 +1,5 @@
 "use strict";
-function somaValores(input1, input2) {
-    if (typeof input1 === "string" || typeof input2 === "string") {
-        return input1.toString() + input2.toString();
-    }
-    else {
-        return input1 + input2;
-    }
+function somaValorNumerico(numero1, numero2) {
+    return numero1 + numero2;
 }
-console.log(somaValores(1, 2));
-console.log(somaValores("Que dia é hoje? ", 2));
-console.log(somaValores(1, " biscoito"));
-console.log(somaValores("Olá ", "tudo bem?"));
+console.log(somaValorNumerico(1, 3));

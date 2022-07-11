@@ -1,6 +1,7 @@
 "use strict";
 //npm start lite-server
 //npm run watch
+//evita o uso do any, pois desregula a tipagem, essecia do typescript 
 let valorAny;
 valorAny = 3;
 valorAny = "Olá";

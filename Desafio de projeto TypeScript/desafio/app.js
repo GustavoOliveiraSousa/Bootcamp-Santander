@@ -1,16 +1,13 @@
 "use strict";
-//npm start lite-server
-//npm run watch
-//evita o uso do any, pois desregula a tipagem, essecia do typescript 
-let valorAny;
-valorAny = 3;
-valorAny = "Olá";
-valorAny = true;
-let valorString1 = "Teste";
-valorString1 = valorAny;
-let valorString2 = ", pode comemorar";
-valorString2 = valorAny;
-function somaString(string1, string2) {
-    console.log(string1 + string2);
+function somaValores(input1, input2) {
+    if (typeof input1 === "string" || typeof input2 === "string") {
+        return input1.toString() + input2.toString();
+    }
+    else {
+        return input1 + input2;
+    }
 }
-somaString(valorString1, valorString2);
+console.log(somaValores(1, 2));
+console.log(somaValores("Que dia é hoje? ", 2));
+console.log(somaValores(1, " biscoito"));
+console.log(somaValores("Olá ", "tudo bem?"));

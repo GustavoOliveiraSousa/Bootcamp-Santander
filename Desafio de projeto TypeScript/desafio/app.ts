@@ -1,14 +1,20 @@
-// function printaValoresNumericos(numero1:number, numero2: number): void {
-//     console.log(numero1 + numero2);
-// }
+let anyEstaDeVolta: any;
+anyEstaDeVolta = 3;
+anyEstaDeVolta = "Olá";
+anyEstaDeVolta = 5;
 
-function somarValoresNumericosETratar(numero1:number, numero2: number, callback: (numero1:number) => number ): number {
-    let resultado = numero1 + numero2;
-    return callback(resultado);
+let stringTeste: string = "Verificar";
+stringTeste = anyEstaDeVolta;
+
+let unknownValue: unknown;
+unknownValue = 1;
+unknownValue = "Oi";
+unknownValue = true;
+unknownValue = "vai sim"
+
+let stringTeste2: string = "agora vai";
+
+if ( typeof unknownValue === 'string') {
+    //só posso reatribuir um tipo unknown se eu verificar com um if
+    stringTeste2 = unknownValue;
 }
-
-function aoQuadrado(numero:number): number {
-    return numero * numero;
-}
-
-console.log(somarValoresNumericosETratar(1 , 3, aoQuadrado) );

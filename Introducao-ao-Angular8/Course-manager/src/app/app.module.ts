@@ -4,12 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
+import { CourseListComponent } from './course/course-list.component';
 
 @NgModule({
+  //AQUI SE DECLARA O COMPONENTE CRIADO NO COMPONENT.TS
   declarations: [
-    AppComponent
+    AppComponent,
+    CourseListComponent
   ],
-  //TODA BUBLIOTECA IMPORTADA LA EM CIMA DEVE SER IMPORTADA AQUI
+  //TODA BIBLIOTECA IMPORTADA LA EM CIMA DEVE SER IMPORTADA AQUI
   imports: [
     BrowserModule,
     FormsModule,

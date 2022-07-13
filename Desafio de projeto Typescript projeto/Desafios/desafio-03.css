@@ -1,0 +1,98 @@
+body {
+    background-color: rgb(233, 13, 13);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+/*CONTEINERS---------------------------------------------------------*/
+.container {
+    margin: 0, auto;
+    display: flex;
+    padding: 15px;
+}
+.grandeContainer {
+    margin: 0, auto;
+    padding: 15px;
+}
+.tudo {
+    display: flex;
+}
+
+.naoSaldo {
+    max-width: 500px;
+}
+.semSaldo {
+    display: flex;
+    flex-direction: row;
+}
+.saldo{
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+/*LOGO*/
+._logo {
+    max-width: 750px;
+}
+.logo {
+    display: flex;
+    margin: 100px auto;
+    width: 300px;
+}
+
+/* BOTÕES E INPUTS------------------------------------------------ */
+.button {
+    flex-direction: row;
+    display: flex;
+    margin: 29px auto;
+    margin-left: 10px;
+    padding: 4px;
+    border-radius: 1px;
+}
+.botao-01 {
+    border-radius: 3px;
+    border: none;
+}
+.botao-02 {
+    margin-left: 10px;
+    border-radius: 3px;
+    border: none;
+}
+.soma {
+    max-width: 75px;
+    border-radius: 3px;
+    border: none;
+}
+
+/*TEXTOS--------------------------------------------------------*/
+
+.titulo{
+    max-width: 750px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.seuSaldoE {
+    font-weight: 750;
+}
+
+.campo-saldo {
+    background-color: white;
+    border-radius: 3px;
+    color: rgb(233, 13, 13);
+    padding: 2px;
+}
+
+.valorASerAdicionado{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .soma {
+        width: 200px;
+    }
+}
+
+

@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  //AQUI É O TYPESCRIPT, SEU CÓDIGO
   title = 'Course-manager';
+  name: string = 'Gustavo';
 }

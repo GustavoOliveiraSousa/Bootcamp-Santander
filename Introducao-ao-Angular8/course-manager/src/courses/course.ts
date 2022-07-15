@@ -6,5 +6,5 @@ export class Course {
     code: string | undefined;
     duration: number | undefined;
     rating: number | undefined;
-    releasedDate: string | undefined;
+    releaseDate: string | undefined;
 }

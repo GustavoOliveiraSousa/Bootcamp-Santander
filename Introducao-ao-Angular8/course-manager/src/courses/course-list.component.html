@@ -1,5 +1,4 @@
 <h2> Course List </h2>
-
 <table class="table table-striped">
     <thead>
         <tr>
@@ -8,20 +7,19 @@
             <th>Price</th>
             <th>Code</th>
             <th>Rating</th>
-            <th>image</th>
+            <th>Lançamento</th>
             <th>Options</th>
         </tr>
     </thead>
     <tbody>
-        <tr ngForm= 'let course of course' >
-            <td>{{course.imageUrl}}</td>
-            <!-- <td>{{course.name}}</td>
-            <td>{{course.price}}</td>
-            <td>{{course.code}}</td>
-            <td>{{course.releasedDate}}</td>
-            <td>{{course.Rating}}</td>
-            <th>Options</th> -->
-
+        <tr *ngFor="let course of courses">
+            <td>{{ course.imageUrl }}</td>
+            <td>{{ course.name }}</td>
+            <td>{{ course.price }}</td>
+            <td>{{ course.code }}</td>
+            <td>{{ course.rating }}</td>
+            <td>{{ course.releaseDate }}</td>
+            <th>Options</th>
         </tr>
     </tbody>
 </table>

@@ -3,7 +3,7 @@ import {Course} from "./course";
 import { CourseService } from './course.service';
 
 @Component({
-    selector: 'app-course-list', //tudo junto
+    //selector: 'app-course-list', //subsituindo pelo link de rotas no RouterModule
     templateUrl: "./course-list.component.html"
 })
 

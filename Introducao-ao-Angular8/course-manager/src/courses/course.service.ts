@@ -1,19 +1,21 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
 import { Course } from "./course";
+import { Observable } from "rxjs";
 
 @Injectable ({
     providedIn: 'root'
 })
 export class CourseService {
-
-
-    retrieveAll(): Course[] {
-        return COURSES;
+    retrieveById(arg0: number): Course {
+        throw new Error("Method not implemented.");
     }
+    private coursesUrl: string = 'http://localhost:3100/api/courses';
 
-    retriveById(id: number): Course{
-        return COURSES.find((courseItereator: Course) => courseItereator.id === id)!;
+    constructor(private httpClient: HttpClient) { }
+
+    retrieveAll(): Observable<Course[]> {
+        return this.httpClient.get<Course[]>(this.coursesUrl);
     }
 
     save(course: Course): void { 

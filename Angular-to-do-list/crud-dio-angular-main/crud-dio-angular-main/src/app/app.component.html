@@ -18,6 +18,7 @@
 
 <br>
 
+<!-- SWITCH CASE -->
 <ul [ngSwitch]="count" class="list-group mx-auto col-6">
   <li class="list-group-item"
     *ngSwitchCase="1"
@@ -77,4 +78,16 @@
   <h1>{{nome}}</h1>
   <button class="btn btn-success" (click)="clicou('Gustavo')">Clique</button>
 
+</div>
+
+<br>
+
+<!-- TWO WAY DATA BINDING -->
+<div class="col-4 mx-auto" >
+  <input 
+  type="text" class="form-control" 
+  placeholder="Digite algo"
+  [(ngModel)]="text"
+  >
+  <h4>Saída: {{text}}</h4>
 </div>

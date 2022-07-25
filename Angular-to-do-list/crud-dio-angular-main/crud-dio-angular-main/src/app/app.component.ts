@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  count = 0;
-
-  nome = 'Gustavo Oliveira de Sousa';
+  count: number  = 0;
+  nome: string = 'Gustavo Oliveira de Sousa';
+  text = ''
 
   pessoas = [
     {

@@ -8,6 +8,25 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   count = 0;
 
+  pessoas = [
+    {
+      nome: 'Gustave',
+      sobrenome: 'Eiffel'
+    },
+    {
+      nome: 'Galápagos',
+      sobrenome: 'Fetus'
+    },
+    {
+      nome: 'Hércules',
+      sobrenome: 'Olimpio'
+    },
+    {
+      nome: 'Apolo',
+      sobrenome: 'Notus'
+    },
+  ];
+
   constructor() {}
 
   ngOnInit(){

@@ -4,10 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MarcaTextoDirective } from './diretivas/marca-texto.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MarcaTextoDirective
   ],
   imports: [
     BrowserModule,

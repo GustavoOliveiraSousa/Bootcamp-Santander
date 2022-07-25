@@ -1,5 +1,6 @@
 <h1 class="text-success text-center" >Live Angular: Diretivas</h1>
 
+<!-- Diretivas de Atributos -->
 <div 
 [ngStyle]="{background: count < 5 ? 'red': 'green'}"
 
@@ -7,3 +8,6 @@
 >
   <h2 class="text-center">Contador: {{count}}</h2>
 </div>
+
+<!-- Diretivas Estruturais -->
+<h2 *ngIf="count > 5">O contador passou de 5!</h2>

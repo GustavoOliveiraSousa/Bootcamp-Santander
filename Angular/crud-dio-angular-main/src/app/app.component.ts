@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   nome: string = 'Gustavo Oliveira de Sousa';
   text = '';
 
-  pessoas: any [] = [];
+  pessoas: any [] = [] 
 
   constructor(private peopleService: PeopleService) {
     

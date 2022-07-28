@@ -1,0 +1,93 @@
+<h1 class="text-success text-center" >Live Angular: Diretivas</h1>
+
+<!-- Diretivas de Atributos -->
+<div 
+[ngStyle]="{background: count < 5 ? 'red': 'green'}"
+
+[ngClass]="{custom: count >= 5}"
+>
+  <h2 class="text-center">Contador: {{count}}</h2>
+</div>
+
+<!-- Diretivas Estruturais -->
+<h2 *ngIf="count > 5; else menor">O contador passou de 5!</h2>
+
+<ng-template #menor>
+  <h2>O contador é menor que 5!</h2>
+</ng-template>
+
+<br>
+
+<!-- SWITCH CASE -->
+<ul [ngSwitch]="count" class="list-group mx-auto col-6">
+  <li class="list-group-item"
+    *ngSwitchCase="1"
+  >
+      É IGUAL A 1
+  </li>
+
+  <li 
+    class="list-group-item"
+    *ngSwitchCase="2"
+  >
+      É IGUAL A 2
+  </li>
+
+  <li 
+    class="list-group-item"
+    *ngSwitchCase="3"
+  >
+      É IGUAL A 3
+  </li>
+
+  <li 
+    class="list-group-item"
+    *ngSwitchCase="4"
+  >
+      É IGUAL A 4
+  </li>
+
+  <li 
+    class="list-group-item"
+    *ngSwitchCase="5"
+  >
+      É IGUAL A 5
+  </li>
+
+  <li 
+    class="list-group-item"
+    *ngSwitchDefault=""
+  >
+      ESSE É O DEFAULT
+  </li>
+</ul>
+
+<br>
+
+<ul class="list-group mx-auto mt-3 col-6">
+  <li class="list-group-item" *ngFor="let pessoa of pessoas">
+    O nome da pessoa é {{pessoa.firstName}} {{pessoa.lastName}} e sua idade é {{pessoa.age}}
+  </li>
+</ul>
+
+<!-- ENVIAR DADOS DO TYPESCRIPT PARA A VIEW E VICE-VERSA -->
+<br>
+
+<div class="text-center">
+
+  <h1 appMarcaTexto corDeFundo="orange" corDotexto="blue">{{nome}}</h1>
+  <button class="btn btn-success" (click)="clicou('Gustavo')">Clique</button>
+
+</div>
+
+<br>
+
+<!-- TWO WAY DATA BINDING -->
+<div class="col-4 mx-auto" >
+  <input 
+  type="text" class="form-control" 
+  placeholder="Digite algo"
+  [(ngModel)]="text"
+  >
+  <h4>Saída: {{text}}</h4>
+</div>

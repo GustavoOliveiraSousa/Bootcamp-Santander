@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <style>
+/* COMEÇO DA  IMPLEMENTAÇÃO ESTÉTICA PESSOAL */
+        .text-center{
+            text-align: center;
+            max-width: 400px;
+        }
+        .separa{
+            display:flex;
+            max-width: 1000px;  
+            margin: 0 auto; 
+        }
+        .minibody{
+            width: 400px;
+            margin: 30px;
+        }
+        .titulo{
+            text-align: center;
+            margin-top: 50px;
+        }
+/* FIM DA IMPLEMENTAÇÃO ESTÉTICA PESSOAL */    
+
+        .flex-container{
+            display: flex;
+            max-width: 400px;
+            border: 1px solid black; 
+            /* INICIO  DA IMPLEMENTAÇÃO ESTÉTICA PESSOAL */    
+            border-radius: 5px;
+            /* FIM DA IMPLEMENTAÇÃO ESTÉTICA PESSOAL */    
+        }
+        .item{
+            flex: 1;
+            background-color: brown;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+        .o1{
+            order: 1;
+        }
+        .o2{
+            order: 2;
+        }
+        .o3{
+            order: 3;
+        }
+        .o4{
+            order: 4;
+        }
+        .direction{
+            flex-direction: column;
+        }
+</style>
+
+<!-- INICIO DA  IMPLEMENTAÇÃO ESTÉTICA PESSOAL -->
+<h1 class="titulo">ORDER</h1>
+<!-- FIM DA  IMPLEMENTAÇÃO ESTÉTICA PESSOAL -->
+
+<div class="separa">
+    <div class="minibody">
+        <h1>Row</h1>
+        <h2>Order: 0</h2>
+        <div class="flex-container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+
+        <h2>Order: mix</h2>
+        <div class="flex-container">
+            <div class="item 04">1</div>
+            <div class="item o2">2</div>
+            <div class="item o3">3</div>
+            <div class="item o1">4</div>
+        </div>
+    </div>
+
+    <div class="minibody">
+        <h1>Columm</h1>
+        <h2>Order: mix</h2>
+        <div class="flex-container direction">
+            <div class="item 04">1</div>
+            <div class="item o2">2</div>
+            <div class="item o3">3</div>
+            <div class="item o1">4</div>
+        </div>
+    </div>
+</div>
+</html>

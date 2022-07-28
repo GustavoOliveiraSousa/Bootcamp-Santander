@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align items</title>
+
+    <style>
+/* COMEÇO DA  IMPLEMENTAÇÃO ESTÉTICA PESSOAL */
+        .text-center{
+            text-align: center;
+            max-width: 400px;
+        }
+        .separa{
+            display:flex;
+            max-width: 1000px;  
+            margin: auto; 
+        }
+        .minibody{
+            width: 400px;
+            margin: 30px;
+        }
+/* FIM DA IMPLEMENTAÇÃO ESTÉTICA PESSOAL */    
+        .container{
+            max-width: 400px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .items{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .strectch{
+            align-items: stretch;
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .columm{
+            flex-direction: column;
+        }
+        .central{
+            min-height: 300px;
+            justify-content: center;
+        }
+        .central, .items{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<div class="separa">
+    <div class="minibody">
+        <h1 class="text-center">ROW</h1>
+        <h2>CENTER</h2>
+        <section class="container center">
+            <div class="items">item 1</div>
+            <div class="items">Todos da mesma largura</div>
+            <div class="items">item 3</div>
+        </section>
+
+        <h2>STRECTCH</h2>
+        <section class="container strectch">
+            <div class="items">item 1</div>
+            <div class="items">Todos na altura do maior item-todos na altura do maior item</div>
+            <div class="items">item 3</div>
+        </section>
+
+        <h2>FLEX-START</h2>
+        <section class="container start">
+            <div class="items">item 1</div>
+            <div class="items">Orienta a todos os itens a ficarem alinhados a parte de cima do container</div>
+            <div class="items">item 3</div>
+        </section>
+
+        <h2>FLEX-END</h2>
+        <section class="container end">
+            <div class="items">item 1</div>
+            <div class="items">Orienta a todos os itens a ficarem alinhados a parte de baixo do container</div>
+            <div class="items">item 3</div>
+        </section>
+
+        <h2>BASELINE</h2>
+        <section class="container baseline">
+            <div class="items">item 1</div>
+            <div class="items">Orienta a todos os itens a ficarem alinhados a parte de baixo do container</div>
+            <div class="items">item 3</div>
+        </section>
+    </div>
+    <div class="minibody">
+        <h1 class="text-center">COLUMM</h1>
+        <h2>CENTER</h2>
+        <section class="container center columm">
+            <div class="items">item 1</div>
+            <div class="items">Todos da mesma largura</div>
+            <div class="items">item 3</div>
+        </section>
+
+        <h2>STRECTCH</h2>
+        <section class="container strectch columm">
+            <div class="items">item 1</div>
+            <div class="items">Todos na altura do maior item-todos na altura do maior item</div>
+            <div class="items">item 3</div>
+        </section>
+
+        <h2>FLEX-START</h2>
+        <section class="container start columm">
+            <div class="items">item 1</div>
+            <div class="items">Orienta a todos os itens a ficarem alinhados a parte de cima do container</div>
+            <div class="items">item 3</div>
+        </section>
+
+        <h2>FLEX-END</h2>
+        <section class="container end columm">
+            <div class="items">item 1</div>
+            <div class="items">Orienta a todos os itens a ficarem alinhados a parte de baixo do container</div>
+            <div class="items">item 3</div>
+        </section>
+
+        <h2>BASELINE</h2>
+        <section class="container baseline columm">
+            <div class="items">item 1</div>
+            <div class="items">Orienta a todos os itens a ficarem alinhados a parte de baixo do container</div>
+            <div class="items">item 3</div>
+        </section>
+
+        <h2>ALINHAMENTO CENTRAL NA TELA</h2>
+        <section class="container central center">
+            <div class="items">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </div>
+        </section>
+    </div>
+</div>
+</html>

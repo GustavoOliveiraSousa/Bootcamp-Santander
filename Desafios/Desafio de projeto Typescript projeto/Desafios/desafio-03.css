@@ -1,0 +1,201 @@
+body {
+    background-color: rgb(233, 13, 13);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+/*CONTEINERS---------------------------------------------------------*/
+.container {
+    margin: 0, auto;
+    display: flex;
+    padding: 15px;
+}
+.grandeContainer {
+    margin: 0, auto;
+    padding: 15px;
+}
+.tudo {
+    display: flex;
+}
+
+.naoSaldo {
+    max-width: 500px;
+}
+.semSaldo {
+    display: flex;
+    flex-direction: row;
+}
+.saldo{
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+/*LOGO*/
+._logo {
+    max-width: 750px;
+}
+.logo {
+    display: flex;
+    margin: 100px auto;
+    width: 300px;
+    position:static;
+}
+
+/* BOTÕES E INPUTS------------------------------------------------ */
+.button {
+    flex-direction: row;
+    display: flex;
+    margin: 29px auto;
+    margin-left: 10px;
+    padding: 4px;
+    border-radius: 1px;
+}
+.botao-01 {
+    border-radius: 3px;
+    border: none;
+}
+.botao-02 {
+    margin-left: 10px;
+    border-radius: 3px;
+    border: none;
+}
+.soma {
+    max-width: 75px;
+    border-radius: 3px;
+    border: none;
+}
+
+/*TEXTOS--------------------------------------------------------*/
+
+.titulo{
+    max-width: 750px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.seuSaldoE {
+    font-weight: 750;
+}
+
+.campo-saldo {
+    background-color: white;
+    border-radius: 3px;
+    color: rgb(233, 13, 13);
+    padding: 2px;
+}
+
+.valorASerAdicionado{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .soma {
+        min-width: 200px;
+        height: 45px;
+    }
+    .button {
+        margin-top: 25px;
+        height: 65px;
+        padding: 10px;
+    }
+    .grandeContainer {
+        max-height: 500px;
+    }
+}
+
+@media(max-width: 500px) {
+    .soma {
+        height: 20px;
+    }
+    .grandeContainer {
+        padding: 0px;
+    }
+    .container {
+        max-height: 100px;
+    }
+    .soma {
+        height: 25px;
+        min-width: 125px;
+    }
+    .botao-01{
+        margin-left: 0px;
+        font-size: 10px;
+    }
+    .botao-02{
+        margin-left: 3px;
+        font-size: 10px;
+        padding-right: 0;
+    }
+    .titulo {
+        font-size: 10px;
+    }
+    .valorASerAdicionado {
+        font-size: 10px;
+    }
+    .button {
+        margin-top: 10px;
+        height: 32px;
+        padding: 10px;
+    }
+    .seuSaldoE {
+        font-size: 15px;
+    }
+    ._logo {
+        max-width: 4000px;
+    }
+    .logo {
+        display: flex;
+        margin: 50px auto;
+        width: 150px;
+    }
+}
+
+@media(max-width: 400px) {
+    .soma {
+        height: 25px;
+        min-width: 125px;
+    }
+    .container{
+        padding: 0;
+    }
+    .button {
+        margin-top: 10px;
+        margin-left: 0px;
+        padding-left: 0;
+        height: 32px;
+        padding: 10px;
+    }
+    .botao-01{
+        margin-left: 0px;
+        font-size: 10px;
+    }
+    .botao-02{
+        margin-left: 3px;
+        font-size: 10px;
+        padding-right: 0;
+    }
+    .titulo {
+        font-size: 10px;
+    }
+    .valorASerAdicionado {
+        font-size: 10px;
+    }
+    .seuSaldoE {
+        font-size: 15px;
+    }
+    .semSaldo{
+        height: 50;
+    }
+    ._logo {
+        max-width: 4000px;
+    }
+    .logo {
+        display: flex;
+        margin: 50px auto;
+        width: 150px;
+    }
+}
+
+

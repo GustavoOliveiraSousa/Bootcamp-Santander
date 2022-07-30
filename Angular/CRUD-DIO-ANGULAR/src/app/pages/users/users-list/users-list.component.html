@@ -7,19 +7,21 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th>Id:</th>
+                    <th>Id</th>
                     <th>Nome</th>
+                    <th>Sobrenome</th>
                     <th>Idade</th>
-                    <th>Profissão</th>
+                    <th>Profissao</th>
                     <th colspan="2"></th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Gustavo</td>
-                    <td>19</td>
-                    <td>Desenvolvedor</td>
+                <tr *ngFor="let user of users">
+                    <td>{{user.Id}}</td>
+                    <td>{{user.Nome}}</td>
+                    <td>{{user.Sobrenome}}</td>
+                    <td>{{user.Idade}}</td>
+                    <td>{{user.Profissao}}</td>
                     <td>
                         <button class="btn btn-primary">Editar</button>
                     </td>

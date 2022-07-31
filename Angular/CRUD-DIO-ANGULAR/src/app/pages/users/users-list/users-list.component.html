@@ -1,8 +1,8 @@
-<div class="card w-100 my-5 ">
+<div class="card w-100 my-5">
     <div class="card-body">
         <h1 class="card-title text-center">Lista de Usuários</h1>
         <button class="btn btn-success mb-4 float-end" routerLink="/form">
-            cadastrar Novo
+            Cadastrar Novo
         </button>
         <table class="table">
             <thead>
@@ -11,22 +11,22 @@
                     <th>Nome</th>
                     <th>Sobrenome</th>
                     <th>Idade</th>
-                    <th>Profissao</th>
+                    <th>Profissão</th>
                     <th colspan="2"></th>
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor="let user of users">
-                    <td>{{user.Id}}</td>
-                    <td>{{user.Nome}}</td>
-                    <td>{{user.Sobrenome}}</td>
-                    <td>{{user.Idade}}</td>
-                    <td>{{user.Profissao}}</td>
+                    <td>{{ user.Id }}</td>
+                    <td>{{ user.Nome }}</td>
+                    <td>{{ user.Sobrenome }}</td>
+                    <td>{{ user.Idade }}</td>
+                    <td>{{ user.Profissao }}</td>
                     <td>
-                        <button class="btn btn-primary">Editar</button>
+                        <button class="btn btn-primary" [routerLink]="['/form', user.Id]">Editar</button>
                     </td>
                     <td>
-                        <button class="btn btn-danger">Deletar</button>
+                        <button class="btn btn-danger">Excluir</button>
                     </td>
                 </tr>
             </tbody>

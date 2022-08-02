@@ -1,7 +1,7 @@
 export interface User {
-    Id?: number,
-    Nome: string,
-    Sobrenome: string,
-    Idade: number,
-    Profissao: string
+  id: number,
+  nome: string,
+  sobrenome: string,
+  idade: number,
+  profissao: string,
 }

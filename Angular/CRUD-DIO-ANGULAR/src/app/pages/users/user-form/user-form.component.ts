@@ -31,14 +31,14 @@ export class UserFormComponent implements OnInit {
     this.actRoute.paramMap.subscribe(params => {
       this.userId = params.get('id');
       console.log(this.userId);
-      if (this.userId !== null) {
-        this.userService.getUsers().subscribe(result => {
+      if(this.userId !== null) {
+        this.userService.getUser(this.userId).subscribe(result => {
           this.userForm.patchValue({
-            id: result[0].Id,
-            nome: result[0].Nome,
-            sobrenome: result[0].Sobrenome,
-            idade: result[0].Idade,
-            profissao: result[0].Profissao,
+            id: result[0].id,
+            nome: result[0].nome,
+            sobrenome: result[0].sobrenome,
+            idade: result[0].idade,
+            profissao: result[0].profissao,
           })
         })
       }
@@ -56,7 +56,7 @@ export class UserFormComponent implements OnInit {
   createUser() {
     this.userForm.get('id')?.patchValue(this.users.length + 1);
     this.userService.postUser(this.userForm.value).subscribe(result => {
-      console.log(`Usuario ${result.Nome} ${result.Sobrenome} foi cadastrado com sucesso !`)
+      console.log(`Usuario ${result.nome} ${result.sobrenome} foi cadastrado com sucesso !`)
     }, (err) => {
 
     }, () => {
@@ -75,9 +75,9 @@ export class UserFormComponent implements OnInit {
   }
 
   actionButton() {
-    if (this.userId !== null) {
+    if(this.userId !== null) {
       this.updateUser()
-    } else {
+    }else {
       this.createUser()
     }
   }

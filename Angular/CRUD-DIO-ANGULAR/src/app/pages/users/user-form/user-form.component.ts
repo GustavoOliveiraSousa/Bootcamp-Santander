@@ -1,5 +1,5 @@
 import { User } from './../../../models/user';
-import { UserService } from './../../../services/user.service';
+import { UserService } from 'src/app/services/user.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -31,7 +31,7 @@ export class UserFormComponent implements OnInit {
     this.actRoute.paramMap.subscribe(params => {
       this.userId = params.get('id');
       console.log(this.userId);
-      if(this.userId !== null) {
+      if (this.userId !== null) {
         this.userService.getUser(this.userId).subscribe(result => {
           this.userForm.patchValue({
             id: result[0].id,
@@ -75,9 +75,9 @@ export class UserFormComponent implements OnInit {
   }
 
   actionButton() {
-    if(this.userId !== null) {
+    if (this.userId !== null) {
       this.updateUser()
-    }else {
+    } else {
       this.createUser()
     }
   }

@@ -7,7 +7,7 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./todo-item.component.css']
 })
 export class TodoItemComponent implements OnInit {
-  @Input() todo: Todo =  {
+  @Input() todo: Todo = {
     id: 0,
     title: '',
     done: false,
@@ -21,11 +21,11 @@ export class TodoItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  removeTodo():void {
+  removeTodo(): void {
     this.remove.emit(this.todo);
   }
 
-  markAsDone():void {
+  markAsDone(): void {
     this.done = true;
   }
 

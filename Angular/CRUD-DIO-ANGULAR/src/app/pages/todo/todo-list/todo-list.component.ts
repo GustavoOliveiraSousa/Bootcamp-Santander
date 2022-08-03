@@ -20,14 +20,14 @@ export class TodoListComponent implements OnInit {
   ngOnInit(): void {
     let items: any = localStorage.getItem('todos');
     let todos = JSON.parse(items);
-    if(!todos) {
+    if (!todos) {
       this.todos = [];
-    }else {
+    } else {
       this.todos = todos;
     }
   }
 
-  addTodo(title:  string) {
+  addTodo(title: string) {
     const id = this.todos.length + 1;
     this.todos.push({
       id: id,

@@ -7,10 +7,10 @@ import { UsersListComponent } from './pages/users/users-list/users-list.componen
 import { PipesExampleComponent } from './pages/pipes-example/pipes-example.component';
 
 const routes: Routes = [
-  { path: '', component: UsersListComponent},
-  { path: 'form', component: UserFormComponent},
-  { path: 'form/:id', component: UserFormComponent},
-  { path: 'todo', component: TodoListComponent},
+  { path: '', component: UsersListComponent },
+  { path: 'form', component: UserFormComponent },
+  { path: 'form/:id', component: UserFormComponent },
+  { path: 'todo', component: TodoListComponent },
   { path: 'data-binding', component: DataBindingComponent },
   { path: 'pipes', component: PipesExampleComponent },
 ];

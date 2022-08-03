@@ -6,8 +6,7 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, Component, DoC
   styleUrls: ['./life-cycle.component.css']
 })
 export class LifeCycleComponent implements OnInit, OnChanges, DoCheck,
-  AfterContentInit, AfterContentChecked, AfterViewChecked, OnDestroy
-  {
+  AfterContentInit, AfterContentChecked, AfterViewChecked, OnDestroy {
   @Input() number = 10;
 
   constructor() {

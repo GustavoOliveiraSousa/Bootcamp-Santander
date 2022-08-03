@@ -6,11 +6,12 @@ public class PrimeiroPrograma {
 
 	public static void main(String[] args) {
 		
-		Gato Gato = new Gato ("Anubis", "Prateado", 2222);
+		Gato Gato1 = new Gato ("Anubis", "Prateado", 2222);
+		Gato Gato2 = new Gato ("Bichano", "Pretp", 10);
 		Livros Livros = new Livros();
 		
-		System.out.println(Gato);
-		System.out.println(Livros);
+		System.out.println(Gato1);
+		System.out.println(Gato2);
 		System.out.println(Livros);
 		
 		/*int a = 1011;

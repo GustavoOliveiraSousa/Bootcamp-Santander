@@ -11,6 +11,7 @@ public class PrimeiroPrograma {
 		
 		System.out.println(Gato);
 		System.out.println(Livros);
+		System.out.println(Livros);
 		
 		/*int a = 1011;
 		int b = 1011;
